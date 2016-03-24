@@ -1,0 +1,4 @@
+#!/usr/bin/bash
+files=(~/.wallpapers/xkcd/XKCD_IMAGES/*)
+PICT=$(printf "%s\n" "${files[RANDOM % ${#files[@]}]}")
+feh -B white --bg-center $PICT
